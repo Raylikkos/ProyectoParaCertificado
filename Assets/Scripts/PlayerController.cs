@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         
         
+        
     }
 
     // Update is called once per frame
@@ -26,7 +27,6 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetTrigger("Jump");
             rb.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
-
             Suelo = false;
         }
     }
